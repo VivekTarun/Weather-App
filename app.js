@@ -42,28 +42,3 @@ app.listen(4000, function () {
     console.log("Server is running on port 3000");
 })
 
-
-// const query = "London";
-// const apiKey = "a3f38c664d075620651361703170c94b#"
-// const unit = "metric"
-// const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&unit=" + unit + "&appid=" + apiKey;
-
-// https.get(url, function (response) {
-//     // console.log(response);
-
-//     response.on("data", function (data) {
-//         // to print in preety JSON
-//         const weatherData = JSON.parse(data)
-//         const temp = weatherData.main.temp;
-//         const desc = weatherData.weather[0].description;
-//         const icon = weatherData.weather[0].icon
-//         const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png"
-//         console.log(desc);
-
-//         res.write("<H1>It is very " + desc + " weather</h1>");
-//         res.write("The temp is " + temp)
-//         res.write("<img src=" + imageURL + ">");
-
-//         res.send();
-//     })
-// })
